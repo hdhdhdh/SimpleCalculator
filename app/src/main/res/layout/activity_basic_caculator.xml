@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".BasicCaculatorActivity">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+
+            android:id="@+id/expresstext"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:singleLine = "true"
+            android:ellipsize="start"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/resulttex"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:textSize="30sp" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="e"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonswitch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="1"
+                android:onClick="switchMode"
+                android:text="S"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonclear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="1"
+                android:onClick="sendMessage"
+                android:text="C"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/mbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:onClick="sendMessage"
+                android:text="B"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttoncos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="cos"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonsin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="sin"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttontan"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="tan"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonleft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="("
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonright"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text=")"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonln"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="ln"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="7"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="8"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="9"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttondivide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="/"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonxy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="^"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="4"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="5"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="6"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonmulti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="*"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonx2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="^2"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="1"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="2"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="3"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonminus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="-"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonpi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="PI"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonnode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="."
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonplus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="+"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sendMessage"
+                android:text="="
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
